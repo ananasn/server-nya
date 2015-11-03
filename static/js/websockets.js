@@ -1,6 +1,5 @@
 window.onload = function(){
     imgs = [];
-    addrs = [];
     
     streamWidget = document.getElementsByClassName("video-stream");
     
@@ -21,11 +20,9 @@ window.onload = function(){
  * @param imgarr The key value of streams object.
  * @return res Array of output and pauseBtns arrays.
  */
-
 function initPanelElements(imgarr) {
     var output = [];
     var pauseBtns = [];
-    var res = [];
     
     for( var i = 0; i < imgarr.length; i++) {
         output.push(imgarr[i].parentNode.getElementsByClassName("info-lbl")[0]);
